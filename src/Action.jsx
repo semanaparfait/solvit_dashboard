@@ -1,5 +1,6 @@
 import { Box, Users, List } from "lucide-react";
 import React from "react";
+import { Button } from "./Button";
 
 function Action() {
   const actions = [
@@ -53,8 +54,12 @@ function Action() {
                 <p className="text-sm text-gray-500">{action.details}</p>
               </div>
             </div>
-
-            <button
+                  <Button
+                  className="px-4 py-1 rounded-md text-sm font-medium"
+            label="Go"
+            variant={index < 2 ? "primary" : "action"}
+          />
+            {/* <button
               className={`px-4 py-1 rounded-md text-sm font-medium ${
                 index < 2
                   ? "bg-blue-600 text-white hover:bg-blue-700"
@@ -62,7 +67,7 @@ function Action() {
               }`}
             >
               Go
-            </button>
+            </button> */}
           </div>
         ))}
       </div>

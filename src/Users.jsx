@@ -1,5 +1,6 @@
 import {User} from 'lucide-react'
 import React from 'react'
+import { Button } from './Button';
 
 function Users() {
     const users = [
@@ -79,7 +80,8 @@ function Users() {
     <div>
         <div className='flex justify-between items-center '>
             <h1 className='font-bold text-lg'>Users</h1>
-            <button className='bg-primaryColor-600 text-sm text-white rounded-lg py-2 px-4'>Add User </button>
+            <Button label="Add User" />
+            {/* <button className='bg-primaryColor-600 text-sm text-white rounded-lg py-2 px-4'>Add User </button> */}
         </div>
         <div className="w-full overflow-x-auto">
             <table className='w-full mt-4 border border-gray-200 rounded-lg'>
