@@ -4,7 +4,7 @@ import React from 'react'
 function Navbar() {
   return (
     <header>
-        <nav className='flex  flex-wrap items-center justify-between p-4 shadow-md'>
+        <nav className='flex gap-4 flex-wrap items-center justify-between p-4 shadow-md'>
             <div>
                 <h1 className='font-bold text-lg'>Dashboard</h1>
                 <p>Welcome Back, Admin</p>
@@ -12,7 +12,10 @@ function Navbar() {
             <div className='flex gap-1 items-center'>
             <Moon color="gray" size={20} />
             <Settings color="gray" size={20}  />
+            <div className='relative'>
             <Bell color="gray" size={20}  />
+            <p className='bg-red-500 absolute top-[-12px] right-[-8px] w-2.5 h-2.5 rounded-full'></p>
+            </div>
                 <p className='pl-3'>Admin@ihuza.com</p>
                 <div className='bg-primaryColor-500 rounded-full p-1.5'>
 
